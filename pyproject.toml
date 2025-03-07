@@ -1,6 +1,10 @@
+#[build-system]
+#requires = ["hatchling"]
+#build-backend = "hatchling.build"
+
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
 
 [project]
 name = "h_e"
@@ -8,7 +12,7 @@ version = "0.0.1"
 authors = [
   { name="Vicente González Ruiz", email="vicente.gonzalez.ruiz@gmail.com" },
 ]
-description = "Huffman Coding."
+description = "Huffman coding."
 readme = "README.md"
 requires-python = ">=3.7"
 classifiers = [
